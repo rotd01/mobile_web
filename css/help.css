@@ -1,0 +1,83 @@
+html,body{
+    height: 100%;
+}
+.root{
+    background: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+section{
+}
+.help_header{
+    width:100%;
+}
+.help_header span{   
+    position: relative;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 0.28rem;
+    color:#2d2d2d;
+    padding:0.25rem 0;
+}
+.help_header i{
+    position: absolute;
+    left:0.2rem;
+    font-size: 0.35rem;
+}
+.help_header i a{
+    display: block;
+    width:100%;
+    height: 100%;
+    opacity: 0;
+    font-size: 0;
+}
+.be_red{
+    color:#fb3449 !important;
+}
+.layui-colla-icon{
+    right: 0.15rem !important;
+    position: absolute;
+    top: 0;
+    font-size: 0.16rem;
+}
+.layui-colla-title {
+    position: relative;
+    height: 0.85rem;
+    line-height: 0.85rem;
+    padding: 0 0.15rem 0 0.4rem;
+    color: #5e5e5e;
+    background-color: #fff !important;
+    cursor: pointer;
+    font-size: 0.26rem;
+    overflow: hidden;
+}
+.layui-colla-item{
+    border-color: #eeeeee;
+}
+.layui-colla-content{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 0.15rem 0 0.65rem;
+    height: 0.85rem;
+    line-height: 0.85rem;
+    font-size:0.22rem;
+    color:#a5a5a5;
+    background-color: #fff !important;
+}
+.layui-colla-content a{
+    color:inherit;
+    font-size: inherit;
+    line-height:inherit;
+}
+.layui-colla-item .layui-colla-content:last-child{
+    margin-bottom:0.2rem;
+}
+.layui-collapse {
+    border-width: 0;
+    border-style: solid;
+    border-radius: 0;
+}

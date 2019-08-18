@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<script>
+        
+		(function (doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+				docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+            };
+
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+		</script>
+
+		<!-- <script src="./js/scal.js"></script>
+		<script src="./js/flex.js"></script> -->
+		<link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/swiper-3.4.2.min.css">
+        <link rel="stylesheet" href="./js/layui/css/layui.css">
+        <link rel="stylesheet" href="./css/common.css">
+        <link rel="stylesheet" href="./css/about_us.css">
+        
+		<title>关于我们</title>
+	</head>
+	<body>
+		<div class="root">
+		
+			<section>
+                <header class="help_header">
+                    <span>
+                        <a href="index.html">
+                            <i class="arrow layui-icon layui-icon-left"></i>
+                        </a>
+                        关于我们
+                    </span>
+                </header>
+                <div class="banner">
+                    <p><cite>SHOPWOON</cite> 为跨境电商<br/>赋予更多可能</p>
+                </div>
+                <div class="content_wrap">
+                    <h5 class="title">关于我们</h5>
+                    <div class="content_txt">
+                        <p>
+                            SHOPWOON是网能集团旗下，江苏网能智能科技股份有限公司结合跨境电商时代浪潮而开发的全新外贸收单交易平台。
+                        </p>
+                        <p>
+                             近年来，随着中国实施“一带一路”全球发展战略的影响力不断延伸，跨境电商在中国迎来了前所未有的发展机遇。普通的创业个体，是中国创业创新发展最大的基础力量。但是，由于跨境电商整体业务链极为复杂，从系统建站、运营推广到商品采购、仓储物流等环节，普通的创业个体根本无力组建如此完整的运营团队，使其在跨境电商推广运营的能力无法得到充分发挥，对中国跨境电商的整体发展也形成了很大的制约。
+                        </p>
+                        <p>
+                            SHOPWOON依托网能集团在系统研发、交易管理、风险控制、商品采购、品控管理、仓储物流等方面强大的整合运营能力，利用创新的互联网精细化运营模式，将跨境电商业务流程分成数个模块，让专注于网络推广运营的个体创业团队可以在SHOPWOON平台发挥其在整个业务链细分领域的专长，利用自身优势，体现更大的商业价值。
+                        </p>
+                        <p>
+                            SHOPWOON的核心目标是打造中国最大的外贸收单平台，让中国的跨境电商运营进入到全新的细分化领域。
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+			<footer>
+				<div class="padding_wrap">
+					<div class="phone">
+						<div class="phone_icon"></div>
+						<div class="phone_n">400-838-8080</div>
+					</div>
+					<div class="the_border"></div>
+					<div class="cor_info">
+						<p>
+							Copyright ©2019SHOPWOON All Rights Reserved. 苏ICP备19007401号-1
+						</p>
+						<p>江苏网能智能科技股份有限公司</p>
+						<p>公司地址:中国 江苏省 南京市 江北新区星火路17号中建环球大厦8楼</p>
+					</div>
+				</div>
+			</footer>
+			<div class="contact">
+				热线电话咨询
+			</div>
+		</div>
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/swiper-3.4.2.jquery.min.js"></script>
+        <script src="js/layer.js"></script>
+        <script>
+        </script>
+	</body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<script>
+		(function (doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                // if(clientWidth>=640){
+                //     docEl.style.fontSize = '100px';
+                // }else{
+                //     docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+                // }
+				docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+            };
+
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+		</script>
+
+		<!-- <script src="./js/scal.js"></script>
+		<script src="./js/flex.js"></script> -->
+		<link rel="stylesheet" href="./css/bootstrap.min.css">
+		<link rel="stylesheet" href="./css/normalize.css">
+		<link rel="stylesheet" href="./css/swiper-3.4.2.min.css">
+		<link rel="stylesheet" href="./css/common.css">
+		<link rel="stylesheet" href="./css/index.css">
+
+		<title>首页</title>
+	</head>
+	<body>
+		<div class="root">
+			<header>
+				<div class="logo_wrap">
+					<div class="img"></div>
+					<button id="menu_btn" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu"
+					 aria-expanded="false">
+						<span class="icon">
+							<span class="icon-bar top-bar"></span>
+							<span class="icon-bar bottom-bar"></span>
+							<span class="icon-bar middle-bar"></span>
+						</span>
+					</button>
+					<div class="navbar-collapse collapse" id="navbar-menu" aria-expanded="false" style="height: 0px;">
+
+						<ul class="nav navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link active" href="about_us.html">关于我们</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="help.html">帮助中心</a>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+			</header>
+			<section>
+				<div class="swiper-container swiper-container-horizontal">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a href="">
+								<img src="./img/banner.jpg">
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="">
+								<img src="./img/banner.jpg">
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="">
+								<img src="./img/banner.jpg">
+							</a>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</section>
+			<section class="info">
+				<div class="wrap">
+					<ul>
+						<li>
+							<a href="plane.html">
+								<div class="icon_set_1"></div>
+								<p class="the_text">招商计划</p>
+							</a>
+						</li>
+						<li>
+							<a href="advantage.html">
+								<div class="icon_set_2"></div>
+								<p class="the_text">优势展现</p>
+							</a>
+						</li>
+						<li>
+							<a href="article_list.html">
+								<div class="icon_set_3"></div>
+								<p class="the_text">行业资讯</p>
+							</a>
+						</li>
+						<li>
+							<div class="icon_set_4"></div>
+							<p class="the_text">商户入驻</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="take_part_in">
+				<h4>诚邀<b>全球跨境电商团队</b>入驻</h4>
+				<input type="text" placeholder="请输入您的手机号，方便我们联系您">
+				<input type="button" value="我要入驻">
+				<p>已有 <cite>15540</cite> 家团队入驻</p>
+			</section>
+			<section class="forth">
+				<div>
+					<h4 class="the_title"><b>跨境电商收单</b>交易平台</h4>
+					<div class="tips">最具前瞻优势的平台</div>
+				</div>
+				<div class="img_wrap">
+					<div class="img_box m-r-20">
+						<img src="./img/p01.jpg">
+					</div>
+					<div class="text_wrap">
+						<p>我们是谁？</p>
+						<div>我们致力于利用互联网模式，为全球跨境贸易注入一种全新的商业模式，更为中国制造参予全球竞争创造更多的可能。</div>
+					</div>
+				</div>
+				<div class="img_wrap">
+					
+					<div class="text_wrap">
+						<p class="text_right">我们做什么？</p>
+						<div>为全球跨境贸易中小卖家提供交易订单收购服务，让专注于互联网推广的个体团队充分发挥自身优势，在运营推广领域创造更大的商业价值。</div>
+					</div>
+					<div class="img_box m-l-20">
+						<img src="./img/p02.jpg">
+					</div>
+				</div>
+				<div class="img_wrap">
+					<div class="img_box m-r-20">
+						<img src="./img/p03.jpg">
+					</div>
+					<div class="text_wrap">
+						<p>我们如何做？</p>
+						<div>为互联网跨境电商卖家提供强大的技术支持而将业务链中最复杂的商品采购、仓储、发货、售后等环节全部交给SHOWOON。</div>
+					</div>
+				</div>
+				<div class="img_wrap">
+					<div class="text_wrap">
+						<p class="text_right">我们的优势？</p>
+						<div>依托集团在系统研发、交易管理、风险控制、商品采购仓储物流等方面强大的整合运营能力，为全球跨境商提供最具价值的精细化分工合作。
+						</div>
+					</div>
+					<div class="img_box m-l-20">
+						<img src="./img/p04.jpg">
+					</div>
+				</div>
+			</section>
+			<section class="advantage">
+				<div>
+					<h4 class="the_title">四大<b>核心优势</b></h4>
+					<div class="tips">为中国制造赋予更大的[全球竞争力]</div>
+				</div>
+				<div class="text_list">
+					<ul>
+						<li>
+							<div class="text_caption">系统研发</div>
+							<p>组建了强大的系统研发团队，为跨境电商卖家提供域名建站、数据采集、订单处理、等综合服务。</p>
+						</li>
+						<li>
+							<div class="text_caption">运营团队</div>
+							<p>SHOPWOON的核心运营管理成员，是多年从事跨境贸易的资深卖家，他们对独立站、平台站等跨境电商的全业务链运营有着深度研究，为跨境电商卖家提供更有价值的解决方案。</p>
+						</li>
+						<li>
+							<div class="text_caption">支付通道</div>
+							<p>和中国银行、农业银行、支付宝国际、银联国际、西联汇款等平台展开合作，为跨境电商卖家提供持续、稳定、安全的支付结算通道。</p>
+						</li>
+						<li>
+							<div class="text_caption">物流仓库</div>
+							<p>在北美、欧洲、东南亚等区域设立了海外仓库，日韩、亚非、南美、印太等区域的海外仓正在积极筹备中，一旦完成，SHOPWOON将会在全球主要经济体拥有功能强大的海外仓库，为卖家提供最及时的订单处理。</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="five">
+				<div>
+					<h4 class="the_title"><b>SHOPWOON</b> 跨境收单全球覆盖</h4>
+					<div class="tips">SHOPWOON的核心目标是打造中国跨境电商最大的收单平台业务覆盖：日韩 美加 英澳 欧洲 印太 东南亚 南美亚非等全球经济热点区域。</div>
+				</div>
+				<div class="bg_img"></div>
+			</section>
+			<section class="six">
+				<div>
+					<h4 class="the_title">推广方式<b>灵活变通</b></h4>
+					<div class="tips">一切只为交易达成</div>
+				</div>
+				<div class="bg_img">
+					<div class="text_1">FB广告推广</div>
+					<div class="text_2">站群推广</div>
+					<div class="text_3">精准社区</div>
+					<div class="text_4">邮件营销</div>
+				</div>
+			</section>
+			<section class="seven">
+				<div>
+					<h4 class="the_title"><b>多通道多支付</b>工具</h4>
+					<div class="tips">多通道多支付工具 确保交易的持续稳定</div>
+				</div>
+				<div class="block_list">
+					<ul>
+						<li>
+							<div class="pay_icon the_card"></div>
+							<div class="inner_wrap">
+								<div class="pay_title">国内银行</div>
+								<div class="pay_text">在国内有中国银行、农业银行、交通银行具备跨境支付功能，目前我们和国内银行已经达成业务合作。</div>
+							</div>
+						</li>
+						<li>
+							<div class="pay_icon house"></div>
+							<div class="inner_wrap">
+								<div class="pay_title">国外银行</div>
+								<div class="pay_text">SHONWOON正在和美国、欧洲、新加坡及香港区域的商业银行密切沟通，为平台订单的收款业务更供更加丰富稳定的收款通道。</div>
+							</div>
+						</li>
+						<li>
+							<div class="pay_icon wallet"></div>
+							<div class="inner_wrap">
+								<div class="pay_title">国外支付</div>
+								<div class="pay_text">SHOPWOON和国外第三方支付平台Paypal、WorldFirst、Payoneer达成合作，同时我们也在和其他国家支付平台展开合作前的准备工作中。</div>
+							</div>
+						</li>
+						<li>
+							<div class="pay_icon paper"></div>
+							<div class="inner_wrap">
+								<div class="pay_title">国际汇款</div>
+								<div class="pay_text">SHOPWOON正在和西联汇款和其他国际银行就业务收款的对接工作已经开始，即将展开合作。</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="eight">
+				<div class="m-b-40">
+					<h4 class="the_title">跨境电商<b>收单模式</b></h4>
+					<div class="tips">为中国制造业带来新的机遇</div>
+				</div>
+				<div class="shadow_box">
+					<ul>
+						<li>
+							<div class="head_icon icon_001"></div>
+							<h4 class="ei_caption">T+1结算</h4>
+							<div class="ei_text">
+								平台的交易订单最快给予T+1结算，让商户完成资金的快带周转。
+							</div>
+							<input type="button" class="button" value="更多了解">
+						</li>
+						<li>
+							<div class="head_icon icon_002"></div>
+							<h4 class="ei_caption">通道稳定</h4>
+							<div class="ei_text">
+								和国内国外数家银行或支付平台达成合作，支付通道稳定持续安全
+							</div>
+							<input type="button" class="button" value="即刻入驻">
+						</li>
+					</ul>
+				</div>
+				<div class="button_wrap">
+					<input class="chat_btn" type="button" value="立即咨询">
+				</div>
+			</section>
+			<footer>
+				<div class="padding_wrap">
+					<div class="phone">
+						<div class="phone_icon"></div>
+						<div class="phone_n">400-838-8080</div>
+					</div>
+					<div class="the_border"></div>
+					<div class="cor_info">
+						<p>
+							Copyright ©2019SHOPWOON All Rights Reserved. 苏ICP备19007401号-1
+						</p>
+						<p>江苏网能智能科技股份有限公司</p>
+						<p>公司地址:中国 江苏省 南京市 江北新区星火路17号中建环球大厦8楼</p>
+					</div>
+				</div>
+			</footer>
+			<div class="contact">
+				热线电话咨询
+			</div>
+		</div>
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="./js/bootstrap.min.js"></script>
+		<script src="js/swiper-3.4.2.jquery.min.js"></script>
+		<script src="js/layer.js"></script>
+		<script>
+			var mySwiper = new Swiper('.swiper-container', {
+				direction: 'horizontal',
+				speed: 500,
+				loop: true,
+				autoplay: 3000,
+				autoplayDisableOnInteraction: false,
+				// 如果需要分页器
+				pagination: '.swiper-pagination'
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<script>
+		(function (doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                // if(clientWidth>=640){
+                //     docEl.style.fontSize = '100px';
+                // }else{
+                //     docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+                // }
+				docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+            };
+
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+		</script>
+
+		<!-- <script src="./js/scal.js"></script>
+		<script src="./js/flex.js"></script> -->
+		<link rel="stylesheet" href="./css/normalize.css">
+		<link rel="stylesheet" href="./css/common.css">
+		<link rel="stylesheet" href="./css/login.css">
+		<title>登录</title>
+	</head>
+	<body>
+		<div class="root">
+			<header>
+				<ul>
+					<li class="active">登录</li>
+					<li>注册</li>
+				</ul>
+			</header>
+			<section>
+				<form action="" method="post" class="login_form show">
+					<div class="row m-t-4">
+						<i class="icon i_1"></i>
+						<input type="text" placeholder="请输入商户账号">
+					</div>
+					<div class="row m-t-4">
+						<i class="icon i_1"></i>
+						<input type="text" placeholder="请输入用户名">
+					</div>
+					<div class="row m-t-4">
+						<i class="icon i_3"></i>
+						<input type="password" placeholder="请输入密码">
+					</div>
+					<div class="row">
+						<input class="button" type="button" value="登录">
+					</div>
+					<div class="row tips">
+						<ul>
+							<li>登录子账号</li>
+							<li>找回密码</li>
+						</ul>
+					</div>
+				</form>
+				<form action="" class="register_form">
+					<div class="row m-t-4">
+						<i class="icon i_4"></i>
+						<input type="text" class="email" placeholder="请输入邮箱">
+					</div>
+					<div class="row m-t-4">
+						<i class="icon i_5"></i>
+						<input type="button" class="get_code" value="获取验证码">
+						<input class="confirm_code" type="text" maxlength="6" placeholder="请输入验证码" style="padding-right:2rem">
+					</div>
+					<div class="row m-t-4">
+						<i class="icon i_6 checked"></i>
+						<input type="checkbox" name="" id="check" checked class="hide">
+						<label class="check_lable" for="check">同意
+							<cite>
+							<a href="">服务条款</a>
+							</cite>
+						</label>
+					</div>
+					<div class="row">
+						<input class="next_button button" type="button" value="下一步">
+					</div>
+					<div class="row tips">
+						<ul>
+							<li>已经有账号, 去登录</li>
+						</ul>
+					</div>
+				</form>
+			</section>
+
+		</div>
+		<footer>
+				
+		</footer>
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/layer.js"></script>
+		<script>
+		window.onload=function(){
+			$("header li").click(function(){
+				$(".active").removeClass("active");
+				$("form.show").removeClass("show");
+				if(this.innerText=="登录"){
+					$(this).addClass("active");
+					$(".login_form").addClass("show");
+				}
+				if(this.innerText=="注册"){
+					$(this).addClass("active")
+					$(".register_form").addClass("show");
+				}
+			});
+			$(".check_lable").click(function(){
+				if($(".checked").length)
+					$(".checked").removeClass("checked");
+				else
+					$(".i_6").addClass("checked");
+			})
+			$(".tips li").click(function(){
+				$(".active").removeClass("active");
+				$("form.show").removeClass("show");
+				
+				$("header li").first().addClass("active");
+				$(".login_form").addClass("show");
+			})
+			$(".get_code").click(function(){
+				if(!$(".email").val().trim()){
+					layer.msg("请输入邮箱",{shift:6,time:1500});
+					$(".email").focus();
+					return;
+				}
+				var that=$(".get_code");
+				var left_second = 10;
+				if( this.value == "获取验证码"||this.value == "重新获取"){
+					that.attr("disabled","disabled").css("opacity","0.5");
+					$(".confirm_code").focus();
+					var tick=setInterval(function(){
+						if( left_second < 0 ){
+							clearInterval(tick);
+							that.removeAttr("disabled").css("opacity","1");
+							that.val("重新获取");
+							return;
+						}
+						that.val(left_second + " s");
+						left_second--;
+					},1000);
+				}
+			})
+			$(".next_button").click(function(){
+				if(!$(".email").val().trim()){
+					layer.msg("请输入邮箱",{shift:6,time:1500});
+					$(".email").focus();
+					return;
+				}
+				if(!$(".confirm_code").val().trim()){
+					layer.msg("请输入验证码",{shift:1,time:1500});
+					$(".confirm_code").focus();
+					return;
+				}
+				if(!$("#check").prop('checked')){
+					layer.msg("请同意服务条款",{shift:6,time:1500});
+					return;
+				}
+				location.href="register.html";
+			})
+		}
+		</script>
+	</body>
+</html>

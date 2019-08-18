@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<script>
+        
+		(function (doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+				docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+            };
+
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+		</script>
+
+		<!-- <script src="./js/scal.js"></script>
+		<script src="./js/flex.js"></script> -->
+		<link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/swiper-3.4.2.min.css">
+        <link rel="stylesheet" href="./js/layui/css/layui.css">
+        <link rel="stylesheet" href="./css/common.css">
+        <link rel="stylesheet" href="./css/help_detail.css">
+        
+		<title>帮助详情 - 常见问题</title>
+	</head>
+	<body>
+		<div class="root">
+		
+			<section>
+                <header class="help_header">
+                    <span>
+                        <a href="help.html">
+                            <i class="arrow layui-icon layui-icon-left"></i>
+                        </a>
+                        常见问题
+                    </span>
+                </header>
+                <div class="content_wrap">
+                    <h5 class="title">注册账户需要哪些材料？</h5>
+                    <div class="content_txt">
+                        <p>
+                            在经贸摩擦加剧和美联储货币政策影响市场情绪等多重因素作用下，全球石油需求增长前景再度蒙上阴影，国际油价基本面恶化。
+                        </p>
+                        <p>
+                            不利消息导致国际油价1日暴跌。纽约油价跌幅为7.9%，伦敦布伦特油价跌幅为6.99%，为4年多以来最大单日跌幅。截至2日收盘，纽约商品交易所9月交货的轻质原油期货价格收于每桶55.66美元；10月交货的伦敦布伦特原油期货价格收于每桶61.89美元。
+                        </p>
+                        <p>
+                            分析指出，贸易摩擦加剧的阴影笼罩全球原油市场，市场更加担忧需求前景，压制油价上涨。数据显示，美国5月份主要成品油消费同比下降，贸易摩擦已经开始拖累美国原油需求，其他经济体也可能出现类似情况。
+                        </p>
+                        <p>
+                            IHS马基特公司高级合伙人维克托·舒姆表示，当前美国石油产量增长强劲，市场供应充足。与此同时，经贸摩擦紧张局势加剧、英国“无协议脱欧”可能性上升等因素，直接影响全球经济增长前景，石油市场需求呈现全球性减弱的迹象。
+                            美银美林2日发布报告说，现阶段全球石油市场需求增长处于近10年来最低水平。报告说，贸易保护主义已大幅冲击全球工业活动，美国最新一轮加征关税威胁，可能令全球石油需求每天减少25万桶至50万桶。
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+			<footer>
+				<div class="padding_wrap">
+					<div class="phone">
+						<div class="phone_icon"></div>
+						<div class="phone_n">400-838-8080</div>
+					</div>
+					<div class="the_border"></div>
+					<div class="cor_info">
+						<p>
+							Copyright ©2019SHOPWOON All Rights Reserved. 苏ICP备19007401号-1
+						</p>
+						<p>江苏网能智能科技股份有限公司</p>
+						<p>公司地址:中国 江苏省 南京市 江北新区星火路17号中建环球大厦8楼</p>
+					</div>
+				</div>
+			</footer>
+			<div class="contact">
+				热线电话咨询
+			</div>
+		</div>
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/swiper-3.4.2.jquery.min.js"></script>
+        <script src="js/layer.js"></script>
+        <script>
+            var tmp=decodeURI(location.search.split("=")[1]);
+            window.onload=function(){
+                if(!tmp)return;
+                $(".title").text();
+            }
+        </script>
+	</body>
+</html>

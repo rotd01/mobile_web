@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<script>
+		(function (doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+				docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+            };
+
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+		</script>
+
+		<!-- <script src="./js/scal.js"></script>
+		<script src="./js/flex.js"></script> -->
+		<link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/swiper-3.4.2.min.css">
+        <link rel="stylesheet" href="./js/layui/css/layui.css">
+        <link rel="stylesheet" href="./css/common.css">
+        <link rel="stylesheet" href="./css/help.css">
+        
+		<title>帮助</title>
+	</head>
+	<body>
+		<div class="root">
+		
+			<section>
+                <header class="help_header">
+                    <span>
+                        <a href="index.html">
+                            <i class="arrow layui-icon layui-icon-left"></i>
+                        </a>
+                        帮助中心
+                    </span>
+                </header>
+                <div class="layui-collapse" lay-accordion>
+                    <div class="layui-colla-item">
+                        <h2 class="layui-colla-title be_red">常见问题</h2>
+                        <div class="layui-colla-content"><a href="help_detail.html?title=注册账户需要准备哪些材料？">注册账户需要准备哪些材料？</a></div>
+                        <div class="layui-colla-content"><a href="help_detail.html?title=提供资料给连连安全吗？">提供资料给连连安全吗？</a></div>
+                        <div class="layui-colla-content"><a href="help_detail.html?title=注册企业账户和个人账户有什么区别？">注册企业账户和个人账户有什么区别？</a></div>
+                        <div class="layui-colla-content"><a href="help_detail.html?title=我在亚马逊开新店，无法提供卖家编号和授权怎么办？">我在亚马逊开新店，无法提供卖家编号和授权怎么办？</a></div>
+                        <div class="layui-colla-content"><a href="help_detail.html?title=我有多个PayPal账号需要注册多个关联账户吗？">我有多个PayPal账号需要注册多个关联账户吗？</a></div>
+                    </div>
+                    <div class="layui-colla-item">
+                        <h2 class="layui-colla-title">账户安全</h2>
+                        <div class="layui-colla-content">内容区域</div>
+                    </div>
+                    <div class="layui-colla-item">
+                        <h2 class="layui-colla-title">账户服务</h2>
+                        <div class="layui-colla-content">内容区域</div>
+                    </div>
+                    <div class="layui-colla-item">
+                        <h2 class="layui-colla-title">平台收款</h2>
+                        <div class="layui-colla-content">内容区域</div>
+                    </div>
+                    <div class="layui-colla-item">
+                        <h2 class="layui-colla-title">账户提现</h2>
+                        <div class="layui-colla-content">内容区域</div>
+                    </div>
+                    <div class="layui-colla-item">
+                        <h2 class="layui-colla-title">卖家服务</h2>
+                        <div class="layui-colla-content">内容区域</div>
+                    </div>
+                </div>
+            </section>
+            
+			<footer>
+				<div class="padding_wrap">
+					<div class="phone">
+						<div class="phone_icon"></div>
+						<div class="phone_n">400-838-8080</div>
+					</div>
+					<div class="the_border"></div>
+					<div class="cor_info">
+						<p>
+							Copyright ©2019SHOPWOON All Rights Reserved. 苏ICP备19007401号-1
+						</p>
+						<p>江苏网能智能科技股份有限公司</p>
+						<p>公司地址:中国 江苏省 南京市 江北新区星火路17号中建环球大厦8楼</p>
+					</div>
+				</div>
+			</footer>
+			<div class="contact">
+				热线电话咨询
+			</div>
+		</div>
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/swiper-3.4.2.jquery.min.js"></script>
+        <script src="js/layer.js"></script>
+        <script src="./js/layui/layui.js"></script>
+        <script>
+            var element;
+            layui.use(['element'], function(){
+               element = layui.element;
+            });
+            $(function(){
+                $(".layui-colla-title").click(function(){
+                    $(".layui-colla-title.be_red").removeClass("be_red");
+                    $(this).addClass("be_red");
+                })
+            });
+        </script>
+	</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<script>
+        
+		(function (doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+				docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+            };
+
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+		</script>
+
+		<link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/swiper-3.4.2.min.css">
+        <link rel="stylesheet" href="./js/layui/css/layui.css">
+        <link rel="stylesheet" href="./css/common.css">
+        <link rel="stylesheet" href="./css/article.css">
+		<title>资讯详情</title>
+	</head>
+	<body>
+		<div class="root">
+			<section>
+                <header class="help_header">
+                    <span>
+                        <a href="javascript:history.go(-1)">
+                            <i class="arrow layui-icon layui-icon-left"></i>
+                        </a>
+                        资讯详情
+                    </span>
+                </header>
+                <div class="content_wrap">
+                    <h5 class="title">国际贸易摩擦加剧等因素导致持续施压油价</h5>
+                    <div class="text_info">
+                        <div class="time">2018-08-05</div>
+                        <div class="belong">行业资讯</div>
+                        <div class="view">
+                            231
+                        </div>
+                    </div>
+                    <div class="content_txt">
+                        <p>
+                            <img src="./img/text_img.jpg" alt="img">
+                        </p>
+                        <p>
+                            <span>
+                            在经贸摩擦加剧和美联储货币政策影响市场情绪等多重因素作用下，全球石油需求增长前景再度蒙上阴影，国际油价基本面恶化。
+                            另外，美联储货币政策调整也直接影响国际油价。美联储上周宣布降息，符合市场预期。不过，美联储主席鲍威尔表示，此次降息不代表较长降息周期的开始，仅是中期货币政策调整。这一表态对不少预计美联储今年将多次降息的投资人造成打击，触发国际油价显著下跌。
+                            </span>
+                        </p>
+                        <p>
+                            <span>
+                            不利消息导致国际油价1日暴跌。纽约油价跌幅为7.9%，伦敦布伦特油价跌幅为6.99%，为4年多以来最大单日跌幅。截至2日收盘，纽约商品交易所9月交货的轻质原油期货价格收于每桶55.66美元；10月交货的伦敦布伦特原油期货价格收于每桶61.89美元。
+                            </span>
+                        </p>
+                        <p>
+                            <span>
+                            不利消息导致国际油价1日暴跌。纽约油价跌幅为7.9%，伦敦布伦特油价跌幅为6.99%，为4年多以来最大单日跌幅。截至2日收盘，纽约商品交易所9月交货的轻质原油期货价格收于每桶55.66美元；10月交货的伦敦布伦特原油期货价格收于每桶61.89美元。
+                            </span>
+                        </p>
+                        <p>
+                            <span>
+                            不利消息导致国际油价1日暴跌。纽约油价跌幅为7.9%，伦敦布伦特油价跌幅为6.99%，为4年多以来最大单日跌幅。截至2日收盘，纽约商品交易所9月交货的轻质原油期货价格收于每桶55.66美元；10月交货的伦敦布伦特原油期货价格收于每桶61.89美元。
+                            </span>
+                        </p>
+                        
+                    </div>
+                </div>
+            </section>
+            
+			<footer>
+				<div class="padding_wrap">
+					<div class="phone">
+						<div class="phone_icon"></div>
+						<div class="phone_n">400-838-8080</div>
+					</div>
+					<div class="the_border"></div>
+					<div class="cor_info">
+						<p>
+							Copyright ©2019SHOPWOON All Rights Reserved. 苏ICP备19007401号-1
+						</p>
+						<p>江苏网能智能科技股份有限公司</p>
+						<p>公司地址:中国 江苏省 南京市 江北新区星火路17号中建环球大厦8楼</p>
+					</div>
+				</div>
+			</footer>
+			<div class="contact">
+				热线电话咨询
+			</div>
+		</div>
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/swiper-3.4.2.jquery.min.js"></script>
+        <script src="js/layer.js"></script>
+        <script>
+        </script>
+	</body>
+</html>

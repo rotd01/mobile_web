@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<script>
+        
+		(function (doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+				docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+            };
+
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+		</script>
+
+		<link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/swiper-3.4.2.min.css">
+        <link rel="stylesheet" href="./js/layui/css/layui.css">
+        <link rel="stylesheet" href="./css/common.css">
+        <link rel="stylesheet" href="./css/article_list.css">
+		<title>行业资讯</title>
+	</head>
+	<body>
+        <header class="help_header">
+            <span>
+                <a href="index.html">
+                    <i class="arrow layui-icon layui-icon-left"></i>
+                </a>
+                行业资讯
+            </span>
+        </header>
+		<div class="root">
+            <section>
+                <div class="content_wrap">
+                    <ul>
+                        <li>
+                            <div>
+                                <a href="article.html?id=2" class="news_wrap">
+                                    <div class="news_t"> 贸易问题致美股大跌：2019年最糟一天！</div>
+                                    <div class="text_info">
+                                        <div class="belong">行业资讯</div>
+                                        <div class="view">
+                                            231
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="news_img">
+                                <img src="./img/news_img01.jpg"  alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="article.html?id=2" class="news_wrap">
+                                    <div class="news_t"> 贸易问题致美股大跌：2019年最糟一天！</div>
+                                    <div class="text_info">
+                                        <div class="belong">行业资讯</div>
+                                        <div class="view">
+                                            231
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="news_img">
+                                <img src="./img/news_img02.jpg"  alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="article.html?id=2" class="news_wrap">
+                                    <div class="news_t"> 贸易问题致美股大跌：2019年最糟一天！</div>
+                                    <div class="text_info">
+                                        <div class="belong">行业资讯</div>
+                                        <div class="view">
+                                            231
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="news_img">
+                                <img src="./img/news_img01.jpg"  alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="article.html?id=2" class="news_wrap">
+                                    <div class="news_t"> 贸易问题致美股大跌：2019年最糟一天！</div>
+                                    <div class="text_info">
+                                        <div class="belong">行业资讯</div>
+                                        <div class="view">
+                                            231
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="news_img">
+                                <img src="./img/news_img01.jpg"  alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="article.html?id=2" class="news_wrap">
+                                    <div class="news_t"> 贸易问题致美股大跌：2019年最糟一天！</div>
+                                    <div class="text_info">
+                                        <div class="belong">行业资讯</div>
+                                        <div class="view">
+                                            231
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="news_img">
+                                <img src="./img/news_img02.jpg"  alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="article.html?id=2" class="news_wrap">
+                                    <div class="news_t"> 贸易问题致美股大跌：2019年最糟一天！</div>
+                                    <div class="text_info">
+                                        <div class="belong">行业资讯</div>
+                                        <div class="view">
+                                            231
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="news_img">
+                                <img src="./img/news_img01.jpg"  alt="">
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="show_more">
+                        加载更多
+                    </div>
+                </div>
+            </section>
+            
+			<footer>
+				<div class="padding_wrap">
+					<div class="phone">
+						<div class="phone_icon"></div>
+						<div class="phone_n">400-838-8080</div>
+					</div>
+					<div class="the_border"></div>
+					<div class="cor_info">
+						<p>
+							Copyright ©2019SHOPWOON All Rights Reserved. 苏ICP备19007401号-1
+						</p>
+						<p>江苏网能智能科技股份有限公司</p>
+						<p>公司地址:中国 江苏省 南京市 江北新区星火路17号中建环球大厦8楼</p>
+					</div>
+				</div>
+			</footer>
+        </div>
+        <div class="contact">
+			热线电话咨询
+		</div>
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/swiper-3.4.2.jquery.min.js"></script>
+        <script src="js/layer.js"></script>
+        <script>
+            $(".show_more").click(function(){
+                var index=layer.load();
+                setTimeout(function(){
+                    layer.close(index);
+                },1000)
+            })
+        </script>
+	</body>
+</html>

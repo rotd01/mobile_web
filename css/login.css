@@ -1,0 +1,183 @@
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: #c0c0c0;
+  font-size: 0.24rem;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #c0c0c0;
+  font-size: 0.24rem;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: #c0c0c0;
+  font-size: 0.24rem;
+}
+body{
+    background: #fff;
+}
+a,a:hover{
+    text-decoration: none;
+    color:inherit;
+}
+.root{
+    padding:2.2rem 0.9rem 2.2rem 0.9rem;
+    box-sizing: border-box;
+}
+.hide{
+    display:none;
+}
+.show{
+    display:block;
+}
+footer{
+    height: 1.7rem;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    background: url(../img/login_bg.png) no-repeat;
+    background-size: 100% auto;
+}
+form{
+    display:none;
+}
+/* contant */
+header{
+    margin-bottom: 0.4rem;
+}
+header ul{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+header li.active{
+    color:#2c98ff;
+    border-color:#2c98ff;
+}
+header li{
+    cursor: pointer;
+    color:#989898;
+    text-align:center;
+    font-size: 0.36rem;
+    padding:0.25rem 0.5rem;
+    box-sizing: border-box;
+    border-bottom:0.03rem solid transparent;
+}
+
+input:focus{
+    outline: none;
+}
+input[type='text'],input[type='password']{
+    width:100%;
+    border:transparent;
+    border-bottom:1px solid #e5e5e5;
+    font-size: 0.24rem;
+    box-sizing: border-box;
+    color:#808080;
+    padding:0.2rem 0.2rem 0.2rem 0.5rem;
+}
+section .button{
+    border:none;
+    color:#fff;
+    background: linear-gradient(134deg,#2c98ff 0%,#64afff 100%);
+    width:4.5rem;
+    height:0.7rem;
+    border-radius: 0.35rem;
+    text-align:center;
+    font-size:0.3rem;
+    box-sizing: border-box;
+    padding:0.15rem 0;
+    margin: 0.5rem 0;
+    box-shadow: 0 0.1rem 0.2rem -0.1rem #5aacff;
+}
+.tips li{
+    cursor: pointer;
+    color:#2c98ff;
+    font-size:0.24rem;
+    text-align: center;
+    padding:0 0.15rem;
+}
+.tips ul{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.tips li+li{
+    border-left:2px solid #d8e9fd;
+}
+.row{
+    width:100%;
+    position: relative;
+}
+.icon{
+    width: 0.23rem;
+    height: 0.28rem;
+    position: absolute;
+    top:50%;
+    left:0;
+    margin-top:-0.13rem;
+}
+.icon.i_1{
+    background: url("../img/user_icon.png") center no-repeat;
+    background-size:100% auto;
+}
+.icon.i_3{
+    background: url("../img/psd_icon.png") center no-repeat;
+    background-size:100% auto;
+}
+.icon.i_4{
+    width:0.24rem;
+    background: url("../img/msg_icon.png") center no-repeat;
+    background-size:100% auto;
+}
+.icon.i_5{
+    background: url("../img/confirm_icon.png") center no-repeat;
+    background-size:100% auto;
+}
+.icon.i_6{
+    z-index: -1;
+    width: 0.25rem;
+    height: 0.25rem;
+    box-sizing: border-box;
+    border: 1px solid #3698ff;
+}
+.icon.i_6.checked{
+    border: none;
+    background: url(../img/check_icon.png) center no-repeat;
+    background-size: 100% 100%;
+}
+.check_lable{
+    line-height: 0.24rem;
+    display: block;
+    font-size: 0.24rem;
+    color:#808080;
+    padding-left: 0.4rem;
+}
+form cite{
+    margin-left:0.1rem;
+    font-style: normal;
+    color:#2c98ff;
+}
+.m-t-4{
+    margin-top:0.4rem;
+}
+.get_code:focus{
+    outline-style: none;
+}
+.get_code{
+    outline-style: none;
+    border:none;
+    position: absolute;
+    right: 0;
+    background: #5aacff;
+    color: #fff;
+    font-size: 0.2rem;
+    text-align: center;
+    width: 1.6rem;
+    height: 0.6rem;
+    border-radius: 0.1rem;
+    padding: 0.14rem;
+    top: 50%;
+    box-sizing: border-box;
+    margin-top: -0.3rem;
+}

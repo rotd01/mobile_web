@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<script>
+		(function (doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                // if(clientWidth>=640){
+                //     docEl.style.fontSize = '100px';
+                // }else{
+                //     docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+                // }
+				docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+            };
+
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+		</script>
+
+		<!-- <script src="./js/scal.js"></script>
+		<script src="./js/flex.js"></script> -->
+		<link rel="stylesheet" href="./css/normalize.css">
+		<link rel="stylesheet" href="./css/common.css">
+		<link rel="stylesheet" href="./css/login.css">
+		<style>
+			.icon{
+				font-style: normal;
+				font-size: 0.2rem;
+				color:#9b9b9b;
+				width:1rem;
+				text-align: center;
+			}
+			input[type='text'], input[type='password'] {
+				padding: 0.2rem 0.2rem 0.2rem 1.2rem;
+			}
+			.m-t-4 {
+				margin-top: 0.2rem;
+			}
+		</style>
+		<title>登录</title>
+	</head>
+	<body>
+		<div class="root">
+			<header>
+				<ul>
+					<li>登录</li>
+					<li class="active">注册</li>
+				</ul>
+			</header>
+			<section>
+				
+				<form action="" class="register_form show">
+					<div class="row m-t-4">
+						<i class="icon ">登录名</i>
+						<input type="text" maxlength="16" placeholder="输入6-16字符，字母数字组合">
+					</div>
+					<div class="row m-t-4">
+						<i class="icon ">密码</i>
+						<input type="password" maxlength="16"  placeholder="请设置6-16任意字符">
+                    </div>
+                    <div class="row m-t-4">
+						<i class="icon ">确认密码</i>
+						<input type="password" maxlength="16"  placeholder="请再次输入登录密码">
+					</div>
+					<div class="row m-t-4">
+						<i class="icon ">姓名</i>
+						<input type="text" placeholder="请设置姓名">
+					</div>
+					<div class="row m-t-4">
+						<i class="icon ">联系方式</i>
+						<input type="text" placeholder="请设置联系方式">
+					</div>
+					<div class="row m-t-4">
+						<i class="icon ">联系地址</i>
+						<input type="text" placeholder="请设置联系地址">
+					</div>
+                    <div class="row">
+						<input class="button" type="button" value="注册">
+					</div>
+					<div class="row tips">
+						<ul>
+							<li>已经有账号, 去登录</li>
+						</ul>
+					</div>
+				</form>
+			</section>
+
+		</div>
+		<footer>
+				
+		</footer>
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/layer.js"></script>
+		<script>
+		window.onload=function(){
+			$("header li").click(function(){
+				if(this.innerText=="登录"){
+					$(".active").removeClass("active");
+					$(this).addClass("active");
+                    location.href="login.html"
+				}
+			});
+			$(".tips").click(function(){
+				location.href="login.html"
+			})
+		}
+		</script>
+	</body>
+</html>
